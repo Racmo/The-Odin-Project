@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Painting canvas</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/canvas.css">
+	<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">  <!-- czcionka -->
+</head>
+<body>
+	<div id="header">
+		<h1> Painting canvas <br> Paint what you want :) </h1>
+
+	
+			<button id="clear">Clear</button>
+			<button id="resize">Change size</button>
+			<form>
+				<input type="checkbox" name="grid" id="grid"> Show grid <br>
+			</form>
+	
+	</div>
+
+	<div id="menu">
+		<button id="randColor" value="rand">Random Colors</button>
+		<button id='blackColor' value="black">Black</button>
+		<button id='redColor' value="red">Red</button>
+		<button id='blueColor' value="blue">Blue</button>
+		<button id='yellowColor' value="yellow">Yellow</button>
+		<button id='greenColor' value="green">Green</button>
+		<button id='whiteColor' value="white">Eraser</button>
+	</div>
+	<div id="canvas" onmousedown="return false">
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/canvas.js"></script>
+
+</body>
+</html>
