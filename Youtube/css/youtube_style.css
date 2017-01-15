@@ -2,14 +2,19 @@
 form{
 	display: inline-block;
 }
+
 /*pasek nawigacyjny*/
 .nav{
-	background-color: yellow;
+	background-color: #f2f2e7;
+	border: none;
+	border-bottom: solid 1px;
+	border-color: rgba(0, 0, 0, 0.24);
 	padding: 1px 1px 1px 1px;
 
 	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 50px;
 
 	align-items: center;
 	display: flex;
@@ -18,18 +23,80 @@ form{
 .search, .logo{
 	display: inline-block;
 	float: left;
+	margin-right: 30px;
 }
 
 .account_navigation{
 	display: inline-block;
 	float: right;
 	margin-left: auto; /*it forces the browser to move .account_navigation to the right position*/
+	margin-right: 10px;
+}
+
+#search_text{
+	width: 500px;
 }
 
 /*obrazy*/
-#logo_image{
-	height: 100px;
+.logo_image{
+	height: 50px;
 }
 #upload_image, #lupa_image{
-	height: 30px;
+	height: 10px;
+}
+
+/*content strony*/
+.content{
+	width: 80%;
+	margin: 70px auto;
+}
+
+.left, .right{
+	display: inline-block;
+	padding: 20px 20px 20px 20px;
+	margin: 10px 10px 10px 10px;
+}
+
+/*lewy pasek*/
+.left{
+	float: left;
+	background-color: yellow;
+}
+
+.comment, .suggested_video{
+	display: flex;
+	align-items: top;
+}
+
+.avatar{
+	height: 70px;
+}
+
+.comment_image, .comment_text{
+	display: block;
+	padding: 5px 5px 5px 5px;
+}
+
+#more_button{
+	width: 100%;
+}
+
+
+/*prawy pasek*/
+.right{
+	background-color: pink;
+}
+
+.thumbnail img{
+	width: 150px;
+}
+
+/*stopka*/
+.footer div{
+	display: flex;
+	align-items: center;
+}
+
+.footer a, .footer button{
+	margin: 0 5px 0 5px;
 }
