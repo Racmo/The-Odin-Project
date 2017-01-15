@@ -1,0 +1,35 @@
+
+form{
+	display: inline-block;
+}
+/*pasek nawigacyjny*/
+.nav{
+	background-color: yellow;
+	padding: 1px 1px 1px 1px;
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	align-items: center;
+	display: flex;
+}
+
+.search, .logo{
+	display: inline-block;
+	float: left;
+}
+
+.account_navigation{
+	display: inline-block;
+	float: right;
+	margin-left: auto; /*it forces the browser to move .account_navigation to the right position*/
+}
+
+/*obrazy*/
+#logo_image{
+	height: 100px;
+}
+#upload_image, #lupa_image{
+	height: 30px;
+}
