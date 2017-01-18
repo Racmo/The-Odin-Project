@@ -1,14 +1,54 @@
+body{
+	background-color: #ececec;
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif
+}
 
 form{
 	display: inline-block;
 }
 
+hr{
+	color: rgba(0, 0, 0, 0.11);
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*div{
+	border: solid 0.5px blue;
+}
+*/
+button{
+	border-radius: 0;
+	height: 25px;
+	margin: 0;
+	box-shadow: none;
+	border: solid 0.5px gray;
+	background-color: white;
+	color: gray;
+}
+
+#upload_button{
+	background-color: transparent;
+	border: none;
+}
+#sign_button{
+	background-color: #2386cf;
+	border: none;
+	color: white;
+}
+
 /*pasek nawigacyjny*/
 .nav{
-	background-color: #f2f2e7;
+	background-color: white;
 	border: none;
 	border-bottom: solid 1px;
-	border-color: rgba(0, 0, 0, 0.24);
+	border-color: rgba(0, 0, 0, 0.11);
 	padding: 1px 1px 1px 1px;
 
 	position: fixed;
@@ -35,6 +75,12 @@ form{
 
 #search_text{
 	width: 500px;
+	height: 25px;
+	border-radius: 0;
+	box-shadow: none;
+	border: solid 1px gray;
+	background-color: white;
+	color: gray;
 }
 
 /*obrazy*/
@@ -49,27 +95,28 @@ form{
 .content{
 	width: 80%;
 	margin: 70px auto;
+	padding: 10px 10px 10px 10px;
 }
 
 .left, .right{
 	display: inline-block;
-	padding: 20px 20px 20px 20px;
-	margin: 10px 10px 10px 10px;
+	/*padding: 20px 20px 20px 20px;*/
+	margin: 0 10px 0 10px;
 }
 
 /*lewy pasek*/
 .left{
 	float: left;
-	background-color: yellow;
 }
 
 .comment, .suggested_video{
 	display: flex;
-	align-items: top;
+	align-items: flex-start;
 }
 
 .avatar{
-	height: 70px;
+	height: 60px;
+	border: solid 1px rgba(0, 0, 0, 0.11);
 }
 
 .comment_image, .comment_text{
@@ -79,24 +126,163 @@ form{
 
 #more_button{
 	width: 100%;
+	margin-bottom: 20px;
+} 
+
+
+.left div{
+	background-color: white;
+	margin: 5px 0 5px 0;
+	padding: 5px 5px 5px 5px;
 }
 
-
 /*prawy pasek*/
+
 .right{
-	background-color: pink;
+	padding: 20px 20px 20px 20px;
+	background-color: white;
 }
 
 .thumbnail img{
 	width: 150px;
+	border: solid 1px rgba(0, 0, 0, 0.11);
 }
 
-/*stopka*/
+.suggested_video_info p{
+	font-size: 0.9em;
+	color: gray;
+	padding: 5px 0 5px 0;
+}
+
+.suggested_video_info{
+	padding: 0 5px 0 5px;
+}
+
+/*video*/
+
+.left .video{
+	margin: 0;
+}
+
+.video_title h1{
+	font-size: 1.5em;
+}
+
+#published{
+	font-size: 0.8em;
+	color: #2386cf;
+	font-weight: bold;
+}
+
+.left .video_info{
+	padding: 10px 10px 10px 10px;
+}
+
+.user_name, .likes_number{
+	font-size: 0.9em;
+	color: #2386cf;
+}
+
+.date{
+	font-size: 0.75em;
+	color: gray;
+}
+
+.left .reply{
+	font-size: 0.9em;
+	color: gray;
+	padding: 5px 0 0 0;
+}
+
+.comment_text p{
+	margin: 5px 0 2px 0;
+}
+.comment_text img{
+	height: 0.9em;
+}
+
+/*channel*/
+.channel{
+	display: flex;
+	align-items: flex-end;
+}
+.author{
+	display: flex;
+	align-items: center;
+}
+.author h1{
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.author span{
+	padding: 5px 5px 5px 5px;
+}
+.author #subscribe{
+	background-color: red;
+	color: white;
+}
+
+.author #subscribe_number{
+	background-color: white;
+	border: solid 0.5px rgba(0, 0, 0, 0.11);
+	color: gray;
+	font-size: 0.9em;
+}
+
+.channel .views{
+	float: right;
+	margin-left: auto; /*it forces the browser to move div to the right position*/
+	color: gray;
+	font-size: 1.3em;
+}
+/*share*/
+.share{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	color: gray;
+}
+
+.share div{
+	margin: 0;
+}
+
+.share img{
+	height: 20px;
+}
+
+.share p{
+	display: inline;
+}
+
+.share .share_links{
+	float: left;
+	margin-right: auto; /*it forces the browser to move div to the right position*/
+}
+
+.share a{
+	margin-right: 10px;
+}
+
+/*footer*/
+.footer{
+	margin-top: 50px;
+}
+
 .footer div{
 	display: flex;
 	align-items: center;
+	border: solid 1px rgba(0, 0, 0, 0.11);
+	background-color: white;
+	width: 100%;
 }
 
 .footer a, .footer button{
 	margin: 0 5px 0 5px;
+}
+
+#footer_links1, #footer_links2{
+	border: none;
 }

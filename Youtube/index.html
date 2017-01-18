@@ -5,6 +5,7 @@
 	<title>Youtube video</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/youtube_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 </head>
 <body>
 
@@ -26,10 +27,10 @@
 
 		<div class="account_navigation"> 
 			<form>
-				<button>
+				<button id="upload_button">
 					<img id="upload_image" src="images/upload.png" alt="upload">
 				</button>
-				<button>
+				<button id="sign_button">
 					Sign in
 				</button>
 			</form>
@@ -46,11 +47,41 @@
 			</div>
 
 			<div class="video_title">
-				<h1>HBO: Westworld - Intro / Opening Credits</h1>		
+				<a href="#"><h1>HBO: Westworld - Intro / Opening Credits</h1></a>	
+				<div class="channel">
+					<div class="author">
+						<img class="avatar" src="images/avatar.png" alt="avatar">
+						<div class="subs">
+							<a href="#"><h1> HBO </h1></a>
+							<span id="subscribe"> Subskrybuj </span>
+							<span id="subscribe_number"> 2 633</span>
+						</div>
+					</div>
+					<div class="views">
+						<p>428 315 wyświetleń</p>
+					</div>
+				</div>
+				<hr>
+				<div class="share">
+					<div class="share_links">
+						<a href="#"> <img src="images/plus.png" alt="add"> Dodaj do </a>
+						<a href="#"> <img src="images/share.png" alt="share"> Udostępnij </a>
+						<a href="#"> <img src="images/more.png" alt="more"> Więcej </a>
+					</div>
+
+					<div class="likes">
+						<img src="images/up.png" alt="thumbs up">
+						<p>10 567</p>
+					</div>
+					<div class="dislikes">
+						<img src="images/down.png" alt="thumbs down">	
+						<p>243</p>					
+					</div>
+				</div>
 			</div>
 
 			<div class="video_info">
-				<bold>Published on Oct 2, 2016 </bold><br>
+				<span id="published">Published on Oct 2, 2016 </span><br>
 
 				© All Rights Reserved to Warner Bros. Entertainment <br>
 				No copyright infringement intended <br>
@@ -236,14 +267,14 @@
 			<a href="#"> Advertise </a>
 			<a href="#"> Developers </a>
 			<a href="#"> Youtube+ </a>
- 		</div>
- 		<div id="footer_links2">
+		</div>
+		<div id="footer_links2">
 			<a href="#"> Terms </a>
 			<a href="#"> Privacy </a>
 			<a href="#"> Policy & Safety </a>
 			<a href="#"> Send feedback </a>
 			<a href="#"> Test new features </a>
- 		</div>
+		</div>
 	</div>
 </body>
 </html>
